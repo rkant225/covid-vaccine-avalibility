@@ -6,6 +6,7 @@ body{
   height: 100%;
   color: white;
   background-image: url('./assets/bg6.jpg');
+  background-attachment: fixed;
   background-size: cover;
 }
 .logo{
