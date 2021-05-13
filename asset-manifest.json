@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/covid-vaccine-avalibility/static/css/main.d826c555.chunk.css",
-    "main.js": "/covid-vaccine-avalibility/static/js/main.b743663a.chunk.js",
-    "main.js.map": "/covid-vaccine-avalibility/static/js/main.b743663a.chunk.js.map",
+    "main.js": "/covid-vaccine-avalibility/static/js/main.5e8c8466.chunk.js",
+    "main.js.map": "/covid-vaccine-avalibility/static/js/main.5e8c8466.chunk.js.map",
     "runtime-main.js": "/covid-vaccine-avalibility/static/js/runtime-main.63488d39.js",
     "runtime-main.js.map": "/covid-vaccine-avalibility/static/js/runtime-main.63488d39.js.map",
     "static/js/2.3c338482.chunk.js": "/covid-vaccine-avalibility/static/js/2.3c338482.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.63488d39.js",
     "static/js/2.3c338482.chunk.js",
     "static/css/main.d826c555.chunk.css",
-    "static/js/main.b743663a.chunk.js"
+    "static/js/main.5e8c8466.chunk.js"
   ]
 }
