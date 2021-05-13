@@ -17,7 +17,7 @@ const Center = (props) => {
             <div style={{display : 'flex', flexWrap : 'wrap'}}>
                 {center.sessions.map((slot)=>{
                     return (
-                        <Slot slot={slot}/>
+                        <Slot slot={slot} fee_type={center.fee_type}/>
                     );
                 })}
             </div>

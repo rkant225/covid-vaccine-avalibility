@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Slot = (props) => {
-    const {slot} = props;
+    const {slot, fee_type} = props;
     const availableDosesColor = slot.available_capacity > 15 ? '#8FD400' : '#FF5050';
     const getFormatedDate = (date) =>{
         const month = date.substring(3,5);
@@ -26,6 +26,13 @@ const Slot = (props) => {
                 <div style={{borderRadius : '50%', width : '3rem', height : '3rem', textAlign : 'center', backgroundColor : '#0066FF', padding : '.2rem', margin : '.5rem'}}>Age<br/>{slot.min_age_limit}+</div>
                 <div style={{borderRadius : '50%', width : '3rem', height : '3rem', textAlign : 'center', backgroundColor : availableDosesColor, padding : '.2rem'}}>Dose<br/> {slot.available_capacity}</div>
             </div>
+
+            <hr/>
+
+            <div style={{margin : 'auto', width : 'max-content', backgroundColor : fee_type == 'Free' ? '#3AA655' : 'tomato' , padding : '.2rem 1rem', borderRadius : '25px', textAlign : 'center'}}>
+                {fee_type}
+            </div>
+
         </div>
     )
 }
