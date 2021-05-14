@@ -2,7 +2,7 @@ import React from 'react'
 import Slot from '../Slot/Slot';
 
 const Center = (props) => {
-    const {center} = props;
+    const {center, isByDistrict} = props;
     return (
         
         <div className="center-box">
@@ -14,13 +14,21 @@ const Center = (props) => {
 
             <hr/>
 
-            <div style={{display : 'flex', flexWrap : 'wrap'}}>
-                {center.sessions.map((slot)=>{
-                    return (
-                        <Slot slot={slot} fee_type={center.fee_type}/>
-                    );
-                })}
-            </div>
+            {isByDistrict ?
+                <div style={{display : 'flex', justifyContent : 'space-around'}}>
+                    <Slot slot={center} fee_type={center.fee_type} isByDistrict={isByDistrict}/>
+                </div>
+                :
+                <div style={{display : 'flex', flexWrap : 'wrap'}}>
+                    {center.sessions && center.sessions.map((slot)=>{
+                        return (
+                            <Slot slot={slot} fee_type={center.fee_type}/>
+                        );
+                    })}
+                </div>
+            }
+
+
         </div>
     )
 }

@@ -13,7 +13,7 @@ const Slot = (props) => {
     }
 
     return (
-        <div style={{margin : '1.5rem', backgroundColor : 'rgb(255,255,255,.3)', padding : '.5rem', borderRadius : '15px', minWidth : '10rem'}}>
+        <div style={{margin : '1.5rem', backgroundColor : 'rgb(255,255,255,.3)', padding : '.5rem', borderRadius : '15px', width : '13rem'}}>
             <div style={{display : 'flex', justifyContent : 'space-between', alignItems : 'center'}}>
                 <div style={{fontSize : '1.2rem'}}>{getFormatedDate(slot.date)}</div>
                 <div>
