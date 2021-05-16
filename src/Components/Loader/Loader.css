@@ -7,13 +7,11 @@
     --tail-color : #0d9997;
     --glowing-dot-color : #00fff9 */
 
-    --pageBackground: #222222;
+    --pageBackground: #111111;
     --loader-middle-color: var(--pageBackground);
-    --loader-circle-background : #111111;
-    /* --tail-color : #ffffff;
-    --glowing-dot-color : #dddddd; */
-    --tail-color : blue;
-    --glowing-dot-color : blue;
+    --loader-circle-background : #000000;
+    --tail-color : white;
+    --glowing-dot-color : white;
 }
 
 /* Page styling to cover complete area and bring content to center using flex */
@@ -52,9 +50,9 @@
   /* Make half circle of different color to render tail */
   /* Make its left cornors circular by applynin border-radius */
   /* Keep width 50% to cover half circle */
-  .loader::before{
+  .before{
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 100%;
@@ -64,8 +62,10 @@
     border-bottom-left-radius: 3rem;
   }
 
+ 
+
   /* This will render a dot(head of loader), with glowing effect(implemented using box-shadow) */
-  .loader::after{
+  .after{
     content: "";
     position: absolute;
     top: 0;

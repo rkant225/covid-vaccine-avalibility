@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <Home/>
-      <Footer/>
-      {/* <Loader/> */}
+      {/* <Home/> */}
+      {/* <Footer/> */}
+      <Loader color="yellow"/>
     </div>
   );
 }
