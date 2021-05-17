@@ -1,0 +1,128 @@
+.cup-container{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 97vh;
+    width: 99vw;
+}
+
+.cup{
+    position: absolute;
+    top : 40%;
+    height: 15rem;
+    width: 14rem;
+    background-color: white;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+}
+
+.top{
+    position: absolute;
+    top: -12%;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #aaa, #eeeeee);
+    border-radius: 50%;
+}
+
+.circle{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    height: 3rem;
+    width: calc(100% - 30px);
+    background-image: linear-gradient(to right, #eeeeee, #999999);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tea{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c57e65;
+    border-radius: 50%;
+}
+
+.handle{
+    position: absolute;
+    top: 10%;
+    right: -24%;
+    height: 8rem;
+    width: 6rem;
+    border: 20px solid white;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.plate{
+    position: absolute;
+    bottom: -10%;
+    left: -35%;
+    width: 25rem;
+    height: 8rem;
+    background-image: linear-gradient(to right, #eee, #999);
+    z-index: -10;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 5px #555;
+}
+
+.plate-before{
+    position: absolute;
+    bottom: -6%;
+    left: -31%;
+    width: 24rem;
+    height: 7rem;
+    background-image: linear-gradient(to right, #bbbbbb, #ffffff);
+    z-index: -5;
+    border-radius: 50%;
+    /* box-shadow: 0 10px 10px 20px #555; */
+}
+
+.smoke{
+    position: absolute;
+    top : -29%;
+    left: 10%;
+    height: 5rem;
+    width: 80%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.smoke span{
+    /* position: absolute; */
+    height: 100%;
+    width: 5.1px;
+    margin-right: 3.8px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    filter: blur(8px);
+
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: calc(var(--i) * .5s);
+}
+
+@keyframes animate {
+    0%{ transform: translateY(0px) scaleX(1); opacity: 0;}
+    10%{opacity: 1;}
+    50%{ transform: translateY(-100px) scaleX(8); }
+    85%{opacity: 0;}
+    100%{ transform: translateY(-200px) scaleX(10); opacity: 0;}
+}

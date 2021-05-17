@@ -17,7 +17,7 @@ const Slot = (props) => {
             <div style={{display : 'flex', justifyContent : 'space-between', alignItems : 'center'}}>
                 <div style={{fontSize : '1.2rem'}}>{getFormatedDate(slot.date)}</div>
                 <div>
-                    <a style={{color : 'white', cursor : 'pointer', backgroundColor : '#4F86F7', padding : '.1rem .4rem .1rem .4rem', textDecoration : 'none', borderRadius : '50px'}} href="https://www.cowin.gov.in/home" target="_blank">Book Now</a>
+                    <a style={{color : 'white', cursor : 'pointer', backgroundColor : '#4F86F7', padding : '.1rem .4rem .1rem .4rem', textDecoration : 'none', borderRadius : '50px'}} href="https://www.cowin.gov.in/home" target="_blank" rel="noreferrer">Book Now</a>
                 </div>
             </div>
             <hr/>
@@ -29,7 +29,7 @@ const Slot = (props) => {
 
             <hr/>
 
-            <div style={{margin : 'auto', width : 'max-content', backgroundColor : fee_type == 'Free' ? '#3AA655' : 'tomato' , padding : '.2rem 1rem', borderRadius : '25px', textAlign : 'center'}}>
+            <div style={{margin : 'auto', width : 'max-content', backgroundColor : fee_type === 'Free' ? '#3AA655' : 'tomato' , padding : '.2rem 1rem', borderRadius : '25px', textAlign : 'center'}}>
                 {fee_type}
             </div>
 

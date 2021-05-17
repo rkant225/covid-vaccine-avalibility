@@ -20,9 +20,9 @@ const Center = (props) => {
                 </div>
                 :
                 <div style={{display : 'flex', flexWrap : 'wrap'}}>
-                    {center.sessions && center.sessions.map((slot)=>{
+                    {center.sessions && center.sessions.map((slot, index)=>{
                         return (
-                            <Slot slot={slot} fee_type={center.fee_type}/>
+                            <Slot key={index} slot={slot} fee_type={center.fee_type}/>
                         );
                     })}
                 </div>

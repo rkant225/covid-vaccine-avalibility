@@ -28,7 +28,7 @@ const ByPin =()=> {
       const URL = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pinCode}&date=${formatedDate}`
       console.log(date, URL)
       const response = await axios.get(URL);
-      if(response && response.data && response.data.centers && response.data.centers.length != 0){
+      if(response && response.data && response.data.centers && response.data.centers.length !== 0){
         setVaccinationCenters(response.data.centers);
         setPinCodeError('');
       } else {
@@ -62,7 +62,7 @@ const ByPin =()=> {
   }
 
   const handlePinCodeChange = (e) =>{
-    if(e.target.value.length == 6){
+    if(e.target.value.length === 6){
       setPinCodeError("");
     }
     setPinCode(e.target.value);
@@ -118,9 +118,9 @@ const ByPin =()=> {
         {pinCodeError && <span className="error">{pinCodeError}</span>}
 
         {/* Display all the centers */}
-        {vaccinationCenters.map((center)=>{
+        {vaccinationCenters.map((center, index)=>{
           return(
-              <Center center={center}/>
+              <Center key={index} center={center}/>
           );
         })}
 

@@ -31,7 +31,7 @@
   
   /* Container for loader, just reflect it's shadow below the original loader  */
   .loader-container{
-    -webkit-box-reflect: below 1px linear-gradient(#0001, #4441);
+    /* -webkit-box-reflect: below 1px linear-gradient(#0001, #4441); */
   }
   
   /* Actual loader that will rotate infinitly */
