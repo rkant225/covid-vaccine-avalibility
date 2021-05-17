@@ -71,7 +71,7 @@ body{
 @keyframes animation-by-pin {
   0%{ transform: translateX(-100%)}
   /* 70%{ transform: translateX(10%)} */
-  100%{ transform: scale(0%);}
+  100%{ transform: translateX(0%);}
 }
 
 .button-by-district{
@@ -83,7 +83,7 @@ body{
 @keyframes animation-by-district {
   0%{ transform: translateX(100%)}
   /* 70%{ transform: translateX(-10%)} */
-  100%{ transform: scale(0%);}
+  100%{ transform: translateX(0%);}
 }
 
 
