@@ -19,13 +19,13 @@ body{
 }
 
 .app-container {
-  /* text-align: center; */
+  text-align: center;
   padding: 0.3rem;
 }
 
 /* transform: translateY(-100%); */
 
-.animate-home-button{
+/* .animate-home-button{
   animation-name: anim-home-logo;
   animation-iteration-count: 1;
   animation-duration: 1s;
@@ -34,16 +34,17 @@ body{
 @keyframes anim-home-logo {
   0%{ transform: translateX(100%)}
   100%{ transform: scale(0%);}
-}
+} */
 
 .logo-container{
   animation-name: anim-logo;
   animation-duration: 1s;
   animation-iteration-count: 1;
+  animation-timing-function: ease-out;
 }
 
 @keyframes anim-logo {
-  0%{transform: translateY(-100%); }
+  0%{transform: translateY(-50%); }
   50%{transform: translateY(30%); }
   100%{transform: translateY(0%);}
   
@@ -69,7 +70,7 @@ body{
 
 @keyframes animation-by-pin {
   0%{ transform: translateX(-100%)}
-  70%{ transform: translateX(10%)}
+  /* 70%{ transform: translateX(10%)} */
   100%{ transform: scale(0%);}
 }
 
@@ -81,7 +82,7 @@ body{
 
 @keyframes animation-by-district {
   0%{ transform: translateX(100%)}
-  70%{ transform: translateX(-10%)}
+  /* 70%{ transform: translateX(-10%)} */
   100%{ transform: scale(0%);}
 }
 
